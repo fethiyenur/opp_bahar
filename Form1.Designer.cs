@@ -38,7 +38,7 @@
             CaesarCipherRadioButton = new RadioButton();
             groupBox1 = new GroupBox();
             groupBox2 = new GroupBox();
-            EncryptedMessageTextBox = new TextBox();
+            label3 = new Label();
             groupBox1.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -131,10 +131,10 @@
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(CaesarCipherRadioButton);
             groupBox1.Controls.Add(ROT3RadioButton);
             groupBox1.Controls.Add(groupBox2);
-            groupBox1.Controls.Add(EncryptedMessageTextBox);
             groupBox1.Controls.Add(SuccessLabel);
             groupBox1.Controls.Add(label1);
             groupBox1.Controls.Add(button1);
@@ -156,12 +156,14 @@
             groupBox2.TabStop = false;
             groupBox2.Visible = false;
             // 
-            // EncryptedMessageTextBox
+            // label3
             // 
-            EncryptedMessageTextBox.Location = new Point(284, 296);
-            EncryptedMessageTextBox.Name = "EncryptedMessageTextBox";
-            EncryptedMessageTextBox.Size = new Size(230, 27);
-            EncryptedMessageTextBox.TabIndex = 11;
+            label3.AutoSize = true;
+            label3.Location = new Point(310, 302);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 11;
+            label3.Text = "label3";
             // 
             // Form1
             // 
@@ -189,7 +191,7 @@
         private RadioButton ROT3RadioButton;
         private RadioButton CaesarCipherRadioButton;
         private GroupBox groupBox1;
-        private TextBox EncryptedMessageTextBox;
         private GroupBox groupBox2;
+        private Label label3;
     }
 }

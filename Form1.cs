@@ -27,12 +27,12 @@ namespace exp3
         {
             if (ROT3RadioButton.Checked)
             {
-                // ROT3 seçildiðinde Caesar Cipher seçeneklerini gizle
+               
                 groupBox2.Visible = false;
             }
             else if (CaesarCipherRadioButton.Checked)
             {
-                // Caesar Cipher seçildiðinde Caesar Cipher seçeneklerini göster
+                
                 groupBox2.Visible = true;
             }
         }
@@ -64,12 +64,12 @@ namespace exp3
                 SuccessLabel.Text = "Success";
                 SuccessLabel.BackColor = System.Drawing.Color.Green;
                 SuccessLabel.Visible = true;
-                EncryptedMessageTextBox.Text = encryptedMessage;
+                label3.Text = encryptedMessage;
             }
             else
             {
                 SuccessLabel.Visible = false;
-                EncryptedMessageTextBox.Text = "";
+                label3.Text = "";
             }
         }
         private void Encipher(string input, out string encryptedMessage, out bool success)
@@ -123,5 +123,9 @@ namespace exp3
             success = true;
         }
 
+        private void EncryptedMessageTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
